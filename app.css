@@ -1,0 +1,23 @@
+body{
+    margin:  auto ;
+}
+
+#content-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.tiles{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#about-me{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
