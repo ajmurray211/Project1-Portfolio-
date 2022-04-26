@@ -17,35 +17,63 @@
 </head>
 
 <body>
-    <div id="content-container">
-        <nav id="nav-container">
-            <ul class="tiles" id="nav-bar">
-                <li>previous works</li>
-                <li>projects</li>
-                <li>about me</li>
-                <li>referances</li>
-                <li>contact me</li>
+    <!-- bootstrap nav prac -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item nav-link" href="#">previous works</li>
+                <li class="nav-item">Projects</li>
+                <li class="nav-item">about me</li>
+                <li class="nav-item">referances</li>
+                <li class="nav-item">contact me</li>
             </ul>
-        </nav>
+            <span class="navbar-text"></span>
+        </div>
+    </nav> -->
+    <nav id="nav-container">
+        <ul class="panel" id="nav-bar">
+            <li>previous works</li>
+            <li>projects</li>
+            <li>about me</li>
+            <li>referances</li>
+            <li>contact me</li>
+        </ul>
+    </nav>
 
+    <div id="content-container">
         <section id="name">
             <h1>Alexander Murray</h1>
-            <p></p>
+            <p>welcome quote</p>
         </section>
 
-        <section class="tiles" id="previous-works">
-            <div>Work 1</div>
-            <div>Work 2</div>
-            <div>Work 3</div>
+        <section class="section" id="previous-works">
+            <h2>Previous work</h2>
+            <div class="panel">
+                <div class="tile">Work 1</div>
+                <button> < </button>
+                <div class="tile">Work 2</div>
+                <button>></button>
+                <div class="tile">Work 3</div>
+            </div>
         </section>
 
-        <section class="tiles" id="projects">
-            <div>Project 1</div>
-            <div>Project 2</div>
-            <div>Project 3</div>
+        <section class="section" id="projects">
+            <h2>Projects</h2>
+            <div class="panel">
+                <div class="tile">Project 1</div>
+                <button> < </button>
+                <div class="tile">Project 2</div>
+                <button> > </button>
+                <div class="tile">Project 3</div>
+            </div>
         </section>
 
         <section id="about-me">
+            <h2>About me</h2>
             <img src="" alt="Image of AJ">
             <div> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum quo accusantium vel quia, molestias
                 repellat, enim voluptates magni possimus quidem consequatur reprehenderit, ratione obcaecati sed alias!
@@ -59,16 +87,20 @@
             </div>
         </section>
 
-        <section id="referances">
+        <section class="section" id="referances">
+            <h2>Referances</h2>
             <div>ref 1</div>
             <div>ref 2</div>
         </section>
 
-        <footer class="tiles" id="contact">
-            <div>Facebook</div>
-            <div>Linked in</div>
-            <div>Instagram</div>
-            <div>Email</div>
+        <footer id="contact">
+            <h2>Contact me</h2>
+            <div class="panel">
+                <div>Facebook</div>
+                <div>Linked in</div>
+                <div>Instagram</div>
+                <div>Email</div>
+            </div>
         </footer>
     </div>
 </body>
