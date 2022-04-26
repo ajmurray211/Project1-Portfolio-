@@ -8,8 +8,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="app.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="main.js"></script>
@@ -18,23 +24,23 @@
 
 <body>
     <!-- bootstrap nav prac -->
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item nav-link" href="#">previous works</li>
+                <li class="nav-item">previous works</li>
                 <li class="nav-item">Projects</li>
                 <li class="nav-item">about me</li>
                 <li class="nav-item">referances</li>
                 <li class="nav-item">contact me</li>
             </ul>
-            <span class="navbar-text"></span>
         </div>
-    </nav> -->
-    <nav id="nav-container">
+    </nav>
+
+    <!-- <nav id="nav-container">
         <ul class="panel" id="nav-bar">
             <li>previous works</li>
             <li>projects</li>
@@ -42,7 +48,7 @@
             <li>referances</li>
             <li>contact me</li>
         </ul>
-    </nav>
+    </nav> -->
 
     <div id="content-container">
         <section id="name">
@@ -50,24 +56,24 @@
             <p>welcome quote</p>
         </section>
 
-        <section class="section" id="previous-works">
+        <section class="section">
             <h2>Previous work</h2>
-            <div class="panel">
+            <div class="panel" id="previous-works">
                 <div class="tile">Work 1</div>
-                <button> < </button>
+                <button id="workLeft">Left</button>
                 <div class="tile">Work 2</div>
-                <button>></button>
+                <button id="workRight">Right</button>
                 <div class="tile">Work 3</div>
             </div>
         </section>
 
-        <section class="section" id="projects">
+        <section class="section">
             <h2>Projects</h2>
-            <div class="panel">
+            <div class="panel" id="projects">
                 <div class="tile">Project 1</div>
-                <button> < </button>
+                <button id="projLeft">Left</button>
                 <div class="tile">Project 2</div>
-                <button> > </button>
+                <button id="projRight">Right</button>
                 <div class="tile">Project 3</div>
             </div>
         </section>
@@ -96,10 +102,10 @@
         <footer id="contact">
             <h2>Contact me</h2>
             <div class="panel">
-                <div>Facebook</div>
-                <div>Linked in</div>
-                <div>Instagram</div>
-                <div>Email</div>
+                <li>Email</li>
+                <li>linked in</li>
+                <li>Slack</li>
+                <li>github</li>
             </div>
         </footer>
     </div>

@@ -21,11 +21,10 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: lightgray;
+    background-color: rgba(211, 211, 211, 0.553);
 }
 
 .tile{
-
     justify-content: center;
     flex-grow: 3;
 }
@@ -37,14 +36,24 @@ body{
 #name{
     text-align: center;
     padding-top: 3vh;
-    font-size: 5vh;
+    font-size: 5vw;
 }
 
+/* tiles location for ordering */
+#work1{ order: 1;}
+#work2{ order: 3;}
+#work3{ order: 5;}
+#proj1{ order: 1;}
+#proj2{ order: 3;}
+#proj3{ order: 5;}
+
+
+/* styling for titles */
 h1{
-    font-size:7vh;
+    font-size:7vw;
 }
 h2{
-    font-size: 3vh;
+    font-size: 3vw;
     text-align: center;
 }
 
