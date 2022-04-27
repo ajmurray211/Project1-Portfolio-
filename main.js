@@ -3,21 +3,20 @@ $(document).ready(function () {
     let i = 0;
     // 
     $("#workLeft").on('click', () => {
-        // call shift function with the parametors of works and -1
-        shiftTiles('works', 'left', iShift('down'))
+        // call shift function
+        shiftTiles('work', 'left', iShift('down'))
     })
     $("#workRight").on('click', () => {
-        // call shift function with the parametors of works and 1
-        shiftTiles('works', 'right', iShift('up'))
+        // call shift function
+        shiftTiles('work', 'right', iShift('up'))
     })
     $("#projLeft").on('click', () => {
-        // call shift function with the parametors of proj and -1
-
-        shiftTiles('projects', 'left', iShift('up'))
+        // call shift function 
+        shiftTiles('proj', 'left', iShift('up'))
     })
     $("#projRight").on('click', () => {
-        // call shift function with the parametors of proj and 1
-        shiftTiles('projects', 'right', iShift('down'))
+        // call shift function
+        shiftTiles('proj', 'right', iShift('down'))
     })
 
     // this function will cycle i from -2 to 2
@@ -31,55 +30,28 @@ $(document).ready(function () {
         } return i
     }
 
-
     // this function will shift the tile location based on the (arr, direction and i value)
     const shiftTiles = (what, direction, i) => {
-        if (what === 'works') {
-            if (i === -2) {
-                $("#work1").addClass('right').removeClass('center').removeClass('left')
-                $("#work2").addClass('center').removeClass('left').removeClass('right')
-                $("#work3").addClass('left').removeClass('right').removeClass('center')
-            } else if (i === -1) {
-                $("#work2").addClass('right').removeClass('center').removeClass('left')
-                $("#work3").addClass('center').removeClass('left').removeClass('right')
-                $("#work1").addClass('left').removeClass('right').removeClass('center')
-            } else if (i === 0) {
-                $("#work3").addClass('right').removeClass('center').removeClass('left')
-                $("#work1").addClass('center').removeClass('left').removeClass('right')
-                $("#work2").addClass('left').removeClass('right').removeClass('center')
-            } else if (i === 1) {
-                $("#work1").addClass('right').removeClass('center').removeClass('left')
-                $("#work2").addClass('center').removeClass('left').removeClass('right')
-                $("#work3").addClass('left').removeClass('right').removeClass('center')
-            } else if (i === 2) {
-                $("#work2").addClass('right').removeClass('center').removeClass('left')
-                $("#work3").addClass('center').removeClass('left').removeClass('right')
-                $("#work1").addClass('left').removeClass('right').removeClass('center')
-            }
-        }
-        else {
-            if (i === -2) {
-                $("#proj1").addClass('right').removeClass('center').removeClass('left')
-                $("#proj2").addClass('center').removeClass('left').removeClass('right')
-                $("#proj3").addClass('left').removeClass('right').removeClass('center')
-            } else if (i === -1) {
-                $("#proj2").addClass('right').removeClass('center').removeClass('left')
-                $("#proj3").addClass('center').removeClass('left').removeClass('right')
-                $("#proj1").addClass('left').removeClass('right').removeClass('center')
-            } else if (i === 0) {
-                $("#proj3").addClass('right').removeClass('center').removeClass('left')
-                $("#proj1").addClass('center').removeClass('left').removeClass('right')
-                $("#proj2").addClass('left').removeClass('right').removeClass('center')
-            } else if (i === 1) {
-                $("#proj1").addClass('right').removeClass('center').removeClass('left')
-                $("#proj2").addClass('center').removeClass('left').removeClass('right')
-                $("#proj3").addClass('left').removeClass('right').removeClass('center')
-            } else if (i === 2) {
-                $("#proj2").addClass('right').removeClass('center').removeClass('left')
-                $("#proj3").addClass('center').removeClass('left').removeClass('right')
-                $("#proj1").addClass('left').removeClass('right').removeClass('center')
-            }
+        if (i === -2) {
+            $(`#${what}1`).addClass('right').removeClass('center').removeClass('left')
+            $(`#${what}2`).addClass('center').removeClass('left').removeClass('right')
+            $(`#${what}3`).addClass('left').removeClass('right').removeClass('center')
+        } else if (i === -1) {
+            $(`#${what}2`).addClass('right').removeClass('center').removeClass('left')
+            $(`#${what}3`).addClass('center').removeClass('left').removeClass('right')
+            $(`#${what}1`).addClass('left').removeClass('right').removeClass('center')
+        } else if (i === 0) {
+            $(`#${what}3`).addClass('right').removeClass('center').removeClass('left')
+            $(`#${what}1`).addClass('center').removeClass('left').removeClass('right')
+            $(`#${what}2`).addClass('left').removeClass('right').removeClass('center')
+        } else if (i === 1) {
+            $(`#${what}1`).addClass('right').removeClass('center').removeClass('left')
+            $(`#${what}2`).addClass('center').removeClass('left').removeClass('right')
+            $(`#${what}3`).addClass('left').removeClass('right').removeClass('center')
+        } else if (i === 2) {
+            $(`#${what}2`).addClass('right').removeClass('center').removeClass('left')
+            $(`#${what}3`).addClass('center').removeClass('left').removeClass('right')
+            $(`#${what}1`).addClass('left').removeClass('right').removeClass('center')
         }
     }
 })
-
