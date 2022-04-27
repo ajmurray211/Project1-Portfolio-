@@ -1,6 +1,6 @@
 body{
     margin:  2vw ;
-    background-color: rgb(183, 183, 183);
+    background-color: grey;
 }
 
 #content-container{
@@ -21,16 +21,21 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: rgba(211, 211, 211, 0.553);
+    background-color: rgba(211, 211, 211, 0.521);
+    align-content: center;
 }
 
 .tile{
-    justify-content: center;
-    flex-grow: 3;  
+    align-content: center;
     text-align: center;
     border: 2px solid black;
-    max-width: fit-content;
+    width: 10vw;
+    height: 10vh;
+    padding-top: 3vh;
+    border-radius: 20%;
 }
+
+
 
 #referances{
     display: none;
@@ -40,6 +45,8 @@ body{
     text-align: center;
     padding-top: 3vh;
     font-size: 5vw;
+    background-image: url('Images/274283739_4517876778324236_6004171672402064426_n.jpeg');
+    background-size: cover;
 }
 #about-me{
     display: flex;
@@ -56,18 +63,28 @@ p{
     padding: 0 10vw
 }
 
-/* #previous-works, #projects{
-    display: grid;
-    grid-template-columns: 2fr 1fr 4fr 1fr 2fr;
-    grid-template-rows: 1fr
-} */
+#previous-works, #projects{
+height: 40vh;
+}
 
 /* tiles location for ordering */
-.left{ order: 1;}
-.btn1{ order: 2}
-.center{ order: 3;}
-.btn2{ order:4}
-.right{order: 5;}
+.left{ 
+    order: 1;
+}
+.btn1{ 
+    order: 2
+}
+.center{
+    order: 3;
+    height: 20vh;
+    width: 20vh;
+}
+.btn2{ 
+    order:4
+}
+.right{
+    order: 5;
+}
 
 /* styling for titles */
 h1{

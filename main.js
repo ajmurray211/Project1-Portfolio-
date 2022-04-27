@@ -1,23 +1,21 @@
 $(document).ready(function () {
+
     let i = 0;
+    // 
     $("#workLeft").on('click', () => {
-        // console.log('work left')
         // call shift function with the parametors of works and -1
         shiftTiles('works', 'left', iShift('down'))
     })
     $("#workRight").on('click', () => {
-        // console.log('work right')
         // call shift function with the parametors of works and 1
         shiftTiles('works', 'right', iShift('up'))
     })
     $("#projLeft").on('click', () => {
-        // console.log('projects left')
         // call shift function with the parametors of proj and -1
 
         shiftTiles('projects', 'left', iShift('up'))
     })
     $("#projRight").on('click', () => {
-        // console.log('projects right')
         // call shift function with the parametors of proj and 1
         shiftTiles('projects', 'right', iShift('down'))
     })
@@ -25,20 +23,11 @@ $(document).ready(function () {
     // this function will cycle i from -2 to 2
     const iShift = (arr) => {
         if (arr === 'up') {
-            if (i >= -1 && i <= 1) {
-                i++
-                console.log(i)
-            } else {
-                i = 0
-            }
+            if (i >= -1 && i <= 1) { i++ }
+            else { i = 0 }
         } else if (arr === 'down') {
-            if (i >= -1 || i >= 2) {
-                i--
-                console.log(i)
-            }
-            else {
-                i = 0
-            }
+            if (i >= -1 || i >= 2) { i-- }
+            else { i = 0 }
         } return i
     }
 
