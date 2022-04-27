@@ -23,40 +23,28 @@
 </head>
 
 <body>
-    <!-- bootstrap nav template -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">previous works</li>
-                <li class="nav-item">Projects</li>
-                <li class="nav-item">about me</li>
-                <li class="nav-item">referances</li>
-                <li class="nav-item">contact me</li>
+    <header>
+        <button id="ham">
+            <img src="Images/3844436_hamburger_menu_more_navigation_vertical_icon.png"
+                alt="Vertical hamburger"></button>
+        <nav id="nav-container">
+            <ul class="start" id="nav-bar">
+                <li class="hidden">Previous work</li>
+                <li class="hidden">Projects</li>
+                <li class="hidden">About me</li>
+                <li id="referance">Referances</li>
+                <li class="hidden">Contact me</li>
+
             </ul>
-        </div>
-    </nav>
-
-    <!-- <nav id="nav-container">
-        <ul class="panel" id="nav-bar">
-            <li>previous works</li>
-            <li>projects</li>
-            <li>about me</li>
-            <li>referances</li>
-            <li>contact me</li>
-        </ul>
-    </nav> -->
-
+        </nav>
+    </header>
     <div id="content-container">
         <section id="name">
             <h1>Alexander Murray</h1>
             <p>welcome quote</p>
         </section>
 
-        <section class="workSection">
+        <section>
             <h2>Previous work</h2>
             <div class="panel" id="previous-works">
                 <div class="tile center" id="work1">Work 1</div>
@@ -67,7 +55,7 @@
             </div>
         </section>
 
-        <section class="workSection">
+        <section>
             <h2>Projects</h2>
             <div class="panel" id="projects">
                 <div class="tile center" id="proj1">Project 1</div>
@@ -92,16 +80,17 @@
                     modi sequi voluptatem delectus, nihil vitae reiciendis eligendi, praesentium fugit officia corporis
                     iusto eius. Fuga delectus debitis autem ratione.
                     Omnis nihil facere, harum modi veritatis architecto suscipit provident soluta facilis explicabo hic
-                    atque, sequi quis at similique? Velit sapiente possimus corrupti voluptatibus perferendis recusandae
-                    omnis porro laudantium! Veritatis, accusantium.
+
                 </p>
             </div>
         </section>
 
-        <section class="section" id="referances">
+        <section id="referances">
             <h2>Referances</h2>
-            <div>ref 1</div>
-            <div>ref 2</div>
+            <div class="panel">
+                <div class="tile">ref 1</div>
+                <div class="tile">ref 2</div>
+            </div>
         </section>
 
         <footer id="contact">
