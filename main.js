@@ -1,35 +1,96 @@
 $(document).ready(function () {
-    // define variables for the tiles in works and projects for startinmg points 
-    // works 1
-    // works 2
-    // works 3
-    // proj 1
-    // proj 2
-    // proj 3
-
+    let i = 0;
     $("#workLeft").on('click', () => {
-        console.log('work left')
+        // console.log('work left')
         // call shift function with the parametors of works and -1
+        shiftTiles('works', 'left', iShift('down'))
     })
     $("#workRight").on('click', () => {
-        console.log('work right')
+        // console.log('work right')
         // call shift function with the parametors of works and 1
+        shiftTiles('works', 'right', iShift('up'))
     })
     $("#projLeft").on('click', () => {
-        console.log('projects left')
+        // console.log('projects left')
         // call shift function with the parametors of proj and -1
+
+        shiftTiles('projects', 'left', iShift('up'))
     })
     $("#projRight").on('click', () => {
-        console.log('projects right')
+        // console.log('projects right')
         // call shift function with the parametors of proj and 1
+        shiftTiles('projects', 'right', iShift('down'))
     })
 
-    // create a function that will shift the tile location based on the (arr, direction)
-    // IF statements filtering the item and direction given 
-    //      add and remove classes to shift the order 
-    // repeat the two lines above until all options are taken
+    // this function will cycle i from -2 to 2
+    const iShift = (arr) => {
+        if (arr === 'up') {
+            if (i >= -1 && i <= 1) {
+                i++
+                console.log(i)
+            } else {
+                i = 0
+            }
+        } else if (arr === 'down') {
+            if (i >= -1 || i >= 2) {
+                i--
+                console.log(i)
+            }
+            else {
+                i = 0
+            }
+        } return i
+    }
 
 
-
+    // this function will shift the tile location based on the (arr, direction and i value)
+    const shiftTiles = (what, direction, i) => {
+        if (what === 'works') {
+            if (i === -2) {
+                $("#work1").addClass('right').removeClass('center').removeClass('left')
+                $("#work2").addClass('center').removeClass('left').removeClass('right')
+                $("#work3").addClass('left').removeClass('right').removeClass('center')
+            } else if (i === -1) {
+                $("#work2").addClass('right').removeClass('center').removeClass('left')
+                $("#work3").addClass('center').removeClass('left').removeClass('right')
+                $("#work1").addClass('left').removeClass('right').removeClass('center')
+            } else if (i === 0) {
+                $("#work3").addClass('right').removeClass('center').removeClass('left')
+                $("#work1").addClass('center').removeClass('left').removeClass('right')
+                $("#work2").addClass('left').removeClass('right').removeClass('center')
+            } else if (i === 1) {
+                $("#work1").addClass('right').removeClass('center').removeClass('left')
+                $("#work2").addClass('center').removeClass('left').removeClass('right')
+                $("#work3").addClass('left').removeClass('right').removeClass('center')
+            } else if (i === 2) {
+                $("#work2").addClass('right').removeClass('center').removeClass('left')
+                $("#work3").addClass('center').removeClass('left').removeClass('right')
+                $("#work1").addClass('left').removeClass('right').removeClass('center')
+            }
+        }
+        else {
+            if (i === -2) {
+                $("#proj1").addClass('right').removeClass('center').removeClass('left')
+                $("#proj2").addClass('center').removeClass('left').removeClass('right')
+                $("#proj3").addClass('left').removeClass('right').removeClass('center')
+            } else if (i === -1) {
+                $("#proj2").addClass('right').removeClass('center').removeClass('left')
+                $("#proj3").addClass('center').removeClass('left').removeClass('right')
+                $("#proj1").addClass('left').removeClass('right').removeClass('center')
+            } else if (i === 0) {
+                $("#proj3").addClass('right').removeClass('center').removeClass('left')
+                $("#proj1").addClass('center').removeClass('left').removeClass('right')
+                $("#proj2").addClass('left').removeClass('right').removeClass('center')
+            } else if (i === 1) {
+                $("#proj1").addClass('right').removeClass('center').removeClass('left')
+                $("#proj2").addClass('center').removeClass('left').removeClass('right')
+                $("#proj3").addClass('left').removeClass('right').removeClass('center')
+            } else if (i === 2) {
+                $("#proj2").addClass('right').removeClass('center').removeClass('left')
+                $("#proj3").addClass('center').removeClass('left').removeClass('right')
+                $("#proj1").addClass('left').removeClass('right').removeClass('center')
+            }
+        }
+    }
 })
 
