@@ -33,6 +33,7 @@ body{
     height: 10vh;
     padding-top: 3vh;
     border-radius: 20%;
+    box-shadow: 3px 3px black;
 }
 
 
@@ -48,10 +49,12 @@ body{
     background-image: url('Images/274283739_4517876778324236_6004171672402064426_n.jpeg');
     background-size: cover;
 }
+
 #about-me{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items: center;
 }
 
 img{
@@ -72,7 +75,11 @@ height: 40vh;
     order: 1;
 }
 .btn1{ 
-    order: 2
+    order: 2;
+    margin-top: 8vh;
+    height: fit-content;
+    background: none;
+    border: none;
 }
 .center{
     order: 3;
@@ -80,7 +87,11 @@ height: 40vh;
     width: 20vh;
 }
 .btn2{ 
-    order:4
+    order:4;
+    margin-top: 8vh;
+    height: fit-content;
+    background: none;
+    border: none;
 }
 .right{
     order: 5;
@@ -110,4 +121,6 @@ h2{
     #referances{
         display: unset;
     }
+
+    
 }
