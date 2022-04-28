@@ -3,29 +3,26 @@ $(document).ready(function () {
     let i = 0;
 
     // this checks to the window size onload and assigns the propper css to the nav
-    if ($(window).width() >= 768) {
+    if ($(window).width() >= 426) {
         $('#nav-bar li').removeClass('hidden')
-        $('#nav-bar').addClass('panel').removeClass('start')
+        $('div').removeClass('hidden')
     } else {
         $('#nav-bar li').addClass('hidden')
-        $('#nav-bar').removeClass('panel').addClass('start')
+        // $('#nav-bar').removeClass('panel')
     }
 
     // Hamburger collapsable button
     $('#ham').on('click', (event) => {
         $('#nav-bar li').toggleClass('hidden')
-        $('#nav-bar').toggleClass('start').toggleClass('panel')
-        $('#ham').toggleClass('ham-position')
     })
 
     // removes hidden class based on screen size
     $(window).resize(() => {
-        if ($(window).width() >= 768) {
+        if ($(window).width() >= 426) {
             $('#nav-bar li').removeClass('hidden')
-            $('#nav-bar').addClass('panel').removeClass('start')
+
         } else {
             $('#nav-bar li').addClass('hidden')
-            $('#nav-bar').removeClass('panel').addClass('start')
         }
     })
 
