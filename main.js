@@ -50,7 +50,7 @@ $(document).ready(function () {
             if (i >= -1 && i <= 1) { i++ }
             else { i = 0 }
         } else if (arr === 'down') {
-            if (i >= -1 || i >= 2) { i-- }
+            if (i >= -1 || i >= 1) { i-- }
             else { i = 0 }
         } return i
     }
@@ -79,4 +79,9 @@ $(document).ready(function () {
             $(`#${what}1`).addClass('left').removeClass('right').removeClass('center')
         }
     }
+
+    $('#ref1').on('mouseenter', () => {
+        console.log('hovered');
+    })
+
 })

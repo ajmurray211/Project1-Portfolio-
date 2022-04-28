@@ -1,10 +1,6 @@
 body{
-    margin:  2vw ;
+    margin:  3vw ;
     background-color: grey;
-}
-
-html{
-    transition: smooth;
 }
 
 #content-container{
@@ -45,7 +41,7 @@ html{
     height: 11vw;
     padding-top: 2vw;
     border-radius: 20%;
-    box-shadow: 3px 3px black;
+    box-shadow: 3px 3px 10px black;
     font-size: 5vw;
 }
 
@@ -151,7 +147,7 @@ footer div {
     #content-container{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr 1fr 2fr .5fr .2fr;
+        grid-template-rows: 1.5fr 1fr 1fr 2fr .5fr .2fr;
     }
 
     #referances, #referance{

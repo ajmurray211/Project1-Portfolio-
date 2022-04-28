@@ -38,24 +38,24 @@ This project is a portfolio website highlighting my coding ability and projects 
 #### MVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Layout & structure   | H | 6hrs | |
-| Hamburger Nav        | H | 4hrs | |
-| Links                | H | 1hr  | |
-| Email form           | H | 2hrs | |
-| Total                |   | 13hrs| |
+| Layout & structure   | H | 6hrs | 8hrs |
+| Hamburger Nav        | H | 4hrs | 4hrs |
+| Links                | H | 1hr  | 1.5hrs |
+| Email form           | H | 2hrs | 0 |
+| Total                |   | 13hrs| 13.5 hrs|
 
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Page styling            | M | 4hrs   | |
-| bootstrap styling       | M | 2hrs   | |
-| Simple Nav              | M | 2hrs   | |
-| Tile slide effects      | L | 1.5hrs | |
-| Tile hover effects      | L | 1.5hrs | |
-| Nav dynamic background  | L | 3hrs   | |
-| Page dynamic background | L | 3hrs   | |
-| tile styles             | L | 2hrs   | |
-| Total                   |   | 19hrs  | |
+| Page styling            | M | 4hrs   | 7hrs |
+| bootstrap styling       | M | 2hrs   | .5hrs |
+| Simple Nav              | M | 2hrs   | 1hrs |
+| Tile slide effects      | L | 1.5hrs | 0 |
+| Tile hover effects      | L | 1.5hrs | 0 |
+| Nav dynamic background  | L | 3hrs   | 2hrs |
+| Page dynamic background | L | 3hrs   | 0 |
+| tile styles             | L | 2hrs   | 2hrs |
+| Total                   |   | 19hrs  | 12.5hrs |
 
 
 ## Additional Libraries
@@ -63,7 +63,19 @@ This project is a portfolio website highlighting my coding ability and projects 
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
+This code is what I used to make my carousel buttons work. I cycle the variable i from 0 to 2 when I want to move right. Then when I want to move the tiles left I cycle my number from zero to -2. Once I reach the limit I set the value of i back to 0. I use this variable to cycle classes that I add and remove arranging the order of my tiles with flex box.
+
+let i = 0;
+
+    const iShift = (arr) => {
+        if (arr === 'up') {
+            if (i >= -1 && i <= 1) { i++ }
+            else { i = 0 }
+        } else if (arr === 'down') {
+            if (i >= -1 || i >= 1) { i-- }
+            else { i = 0 }
+        } return i
+    }
 
 ## Issues and Resolutions
  Use this section to list of all major issues encountered and their resolution.
