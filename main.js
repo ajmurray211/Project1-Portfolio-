@@ -20,7 +20,6 @@ $(document).ready(function () {
     $(window).resize(() => {
         if ($(window).width() >= 426) {
             $('#nav-bar li').removeClass('hidden')
-
         } else {
             $('#nav-bar li').addClass('hidden')
         }
@@ -79,9 +78,4 @@ $(document).ready(function () {
             $(`#${what}1`).addClass('left').removeClass('right').removeClass('center')
         }
     }
-
-    $('#ref1').on('mouseenter', () => {
-        console.log('hovered');
-    })
-
 })

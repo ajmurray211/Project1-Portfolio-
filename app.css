@@ -45,7 +45,7 @@ body{
     font-size: 5vw;
 }
 
-#referances, #referance{
+#references, #reference{
     display: none;
 }
 
@@ -150,7 +150,7 @@ footer div {
         grid-template-rows: 1.5fr 1fr 1fr 2fr .5fr .2fr;
     }
 
-    #referances, #referance{
+    #references, #reference{
         display: unset;
     }
 

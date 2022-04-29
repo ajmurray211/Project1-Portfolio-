@@ -4,10 +4,10 @@
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description | Incomplete
-|Day 1| Wireframes / Priority Matrix / Timeline | Incomplete
-|Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Day 4| MVP & Bug Fixes | Incomplete
+|Day 1| Project Description | Complete
+|Day 1| Wireframes / Priority Matrix / Timeline | Complete
+|Day 3| Core Application Structure (HTML, CSS, etc.) | Complete
+|Day 4| MVP & Bug Fixes | Complete
 |Day 5| Final Touches | Incomplete
 |Day 6| Present | Incomplete
 
@@ -23,7 +23,7 @@ This project is a portfolio website highlighting my coding ability and projects 
 
 ## Time/Priority Matrix 
 
-[Link](https://imgur.com/a/Kt7nMAo)
+- [Link](https://imgur.com/a/Kt7nMAo)
 
 
 ### MVP
@@ -78,5 +78,8 @@ let i = 0;
     }
 
 ## Issues and Resolutions
- Use this section to list of all major issues encountered and their resolution.
+problem: I had trouble with the hamburger nav on the mobile version expanding correctly.
+solution: I tweaked the design to better fit the page and my ability.
 
+problem: JS was 40 lines long of repetative code.
+solution: Pass in an extra variable and use interpolation to incorperate the new information. I was able to cut out half of the code with this solution.
